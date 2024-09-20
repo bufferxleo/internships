@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>to-do</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      ~TO-DO LIST~
+    </header>
+    <div class="content">
+      <div class="new">
+        <input id="taskNameInput" type="text" placeholder="Task Name" required>
+        <input id="dueDateInput" type="date" required>
+        <input id="groupNameInput" type="text" placeholder="Group Name" required>
+        <button onclick="addTask()">New</button>
+      </div>
+      <div class="card">
+        <button class="groups" onclick="showGroups()">GROUPED</button> <!-- WHEN CLICKED THE LIST SHOULD BE VISIBLE, SHOULD BE ACCORDING TO BELONGED GROUP -->
+        <div class="visible" id="taskListContainer">
+          <div class="g" id="taskList"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      task-2
+    </footer>
+    <script src="index.js" async defer></script>
+  </body>
+</html>
